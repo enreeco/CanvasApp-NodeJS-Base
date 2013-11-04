@@ -58,8 +58,7 @@ function verifyAndDecode(input, secret){
     }
 
 	expectedSig = crypto.createHmac('sha256', secret).update(split[1]).digest('base64');
-	//THIS IS NOT WORKING AT ALL IN MY DEV ENV!!
-    if (C.NODE_ENV !== 'dev' && encodedSig !== expectedSig) {
+    if (encodedSig !== expectedSig) {
        throw 'Bad signed JSON Signature!';
     }
    	

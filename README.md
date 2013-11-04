@@ -3,7 +3,7 @@
 
 ## Installation info
 
-## Create you own app on a Force.con Developer Edition org
+### Create you own app on a Force.con Developer Edition org
 
 - Setup -> Create -> Apps -> (Connected Apps) New
 - Fill **Conntected App Name**, **API Name** and **Contact Email**
@@ -15,7 +15,8 @@
  - **Access Method**: use *Signed Request (POST)*
  - **Locations**: choose *Chatter Tab* (the app will be shown in the Chatter page)
 
-Than you need to enable this app.
+Than you need to enable this app
+
 - Setup -> Manage Apps -> Connected Apps -> *Your App Name*
 - In the *OAuth policies* select *Admin approved users are pre-authorized* for the **Permitted Users** field
 - In the *Profiles* related list select your profile (all user of that profile are automatically allowed to consume this app)
@@ -23,19 +24,8 @@ Than you need to enable this app.
 There are more ways to configure the Canvas App usage, this is the quicker.
 
 
-### Set config.js variables (https://devcenter.heroku.com/articles/config-vars):
-	$ heroku config:set GITHUB_USERNAME=joesmith
+### Set the App Secret in the NodeJS environment:
+	$ heroku config:set SF_CANVASAPP_CLIENT_SECRET=XXXXXXXXX
 	Adding config vars and restarting myapp... done, v12
-	GITHUB_USERNAME: joesmith
+	SF_CANVASAPP_CLIENT_SECRET: XXXXXXXXX
 
-	$ heroku config
-	GITHUB_USERNAME: joesmith
-	OTHER_VAR:       production
-
-	$ heroku config:get GITHUB_USERNAME
-	joesmith
-
-	$ heroku config:unset GITHUB_USERNAME
-	Unsetting GITHUB_USERNAME and restarting myapp... done, v13
-
-http://utility-app.herokuapp.com/
