@@ -27,7 +27,7 @@ app.get('/',function(req,res){
     //get the canvas details from session (if any)
     var canvasDetails = sftools.getCanvasDetails(req);
     //the page knows if the user is logged into SF
-    res.render('index',{canvas : canvasDetails});
+    res.render('index',{canvasDetails : canvasDetails});
 });
 
 //canvas callback
