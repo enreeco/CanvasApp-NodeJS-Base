@@ -6,7 +6,7 @@
   <body>
     <h1>Canvas App NodeJS Example</h1>
     <hr/>
-    <% if(typeof canvasDetails !== 'undefined' && typeof canvasDetails.context |== 'undefined'){ %>
+    <% if(typeof canvasDetails !== 'undefined' && typeof canvasDetails.context !== 'undefined'){ %>
       <h3>You are logged into a Force.com Canvas app!</h3>
       <p>These are the details provided by Salesforce POST request</p>
       <pre style="overflow:auto; height: 400px;"><%=JSON.stringify(canvasDetails,undefined,2)%></pre>
