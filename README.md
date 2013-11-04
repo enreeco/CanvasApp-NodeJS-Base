@@ -29,3 +29,4 @@ There are more ways to configure the Canvas App usage, this is the quicker.
 	Adding config vars and restarting myapp... done, v12
 	SF_CANVASAPP_CLIENT_SECRET: XXXXXXXXX
 
+Go to http://enreeco.blogspot.it/2013/11/salesforce-canvas-nodejs-set-up-minimum.html for a complete description.
