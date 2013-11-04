@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <link rel="icon" href="/public/favicon.png" type="image/png" /> 
+    <title>Canvas Example (NodeJS)</title>
+  </head>
+  <body>
+    <h1>Canvas App NodeJS Example</h1>
+    <hr/>
+    <% if(typeof canvasDetails !== 'undefined'){ %>
+      <h3>You are logged into a Force.com Canvas app!</h3>
+      <p>These are the details provided by Salesforce POST request</p>
+      <pre>
+        <%=JSON.stringify(canvasDetails,undefined,2)%>
+      </pre>
+    <% }else{ %>
+      <h3>You are not logged inside a Force.com Canvas</h3>
+    <% }%>
+  </body>
+</html>
