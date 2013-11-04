@@ -1,4 +1,4 @@
-# Force.com Canvas NodeJS 
+# Force.com Canvas NodeJS Base
 ===========
 
 ## Installation info
