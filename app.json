@@ -1,0 +1,17 @@
+{
+  "name": "canvas-force",
+  "description": "",
+  "scripts": {
+    "postdeploy": "node app.js"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
